@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c79829" />
+      <stop offset="100%" stop-color="#e0b44f" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" fill="#f8f3e8" />
+  <g transform="translate(180 170)">
+    <path
+      d="M0-120c44 0 83 28 97 69l-32 11c-9-26-34-44-65-44s-56 18-65 44l-32-11C-83-92-44-120 0-120z"
+      fill="#3b4a64"
+    />
+    <path
+      d="M0-104c25 0 45 20 45 45v32c0 26-12 51-33 67l-12 9-12-9c-21-16-33-41-33-67v-32c0-25 20-45 45-45z"
+      fill="#ffffff"
+      stroke="#3b4a64"
+      stroke-width="10"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M-48-12h96v32l-16 12-32-16-32 16-16-12z"
+      fill="#c79829"
+      stroke="#3b4a64"
+      stroke-width="10"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M0-104c-14 0-25 11-25 25v34l25 18 25-18v-34c0-14-11-25-25-25z"
+      fill="#3b4a64"
+    />
+    <path
+      d="M0 54c-32 0-58 26-58 58v18h116v-18c0-32-26-58-58-58z"
+      fill="url(#accent)"
+      stroke="#3b4a64"
+      stroke-width="10"
+      stroke-linejoin="round"
+    />
+  </g>
+  <g fill="none" stroke="#c79829" stroke-width="10" stroke-linecap="round">
+    <path d="M64 180a116 116 0 0 1 232 0" />
+    <path d="M80 180a100 100 0 0 1 200 0" />
+  </g>
+  <g fill="none" stroke="#3b4a64" stroke-width="6" stroke-linecap="round">
+    <path d="M64 180a116 116 0 0 0 232 0" />
+    <path d="M80 180a100 100 0 0 0 200 0" />
+  </g>
+</svg>
