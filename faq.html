@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ | Troia Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="brand">Troia Construction</div>
-        <nav>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+          <span>Troia Construction</span>
+        </a>
+        <nav class="site-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -22,62 +31,80 @@
       </div>
     </header>
 
-    <main>
-      <section>
-        <h1 class="section-title">Frequently Asked Questions</h1>
-        <p>
-          Have questions about working with Troia Construction? We&apos;ve compiled
-          answers to the topics we hear most often. Reach out if you need more
-          details.
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-heading">Frequently asked questions</h1>
+        <p class="section-lead">
+          The details matter. Here&apos;s how Troia Construction navigates permitting, project
+          delivery, and client communication across San Diego County.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section class="grid" style="margin-top: 2rem; gap: 2rem">
-        <article class="faq-item">
-          <h3>What types of projects do you specialize in?</h3>
-          <p>
-            We specialize in commercial, industrial, and high-end residential
-            construction. Our portfolio includes office towers, healthcare
-            facilities, mixed-use developments, and custom homes.
-          </p>
-        </article>
-        <article class="faq-item">
-          <h3>How do you ensure projects stay on schedule?</h3>
-          <p>
-            Detailed planning, weekly progress reviews, and real-time reporting
-            tools keep stakeholders aligned. Our experienced superintendents
-            proactively resolve issues before they impact timelines.
-          </p>
-        </article>
-        <article class="faq-item">
-          <h3>Do you offer sustainable building solutions?</h3>
-          <p>
-            Yes. We incorporate energy-efficient systems, recycled materials, and
-            green certifications such as LEED into our projects whenever
-            possible.
-          </p>
-        </article>
-        <article class="faq-item">
-          <h3>Can you work with my architect or designer?</h3>
-          <p>
-            Absolutely. We collaborate closely with architects, designers, and
-            consultants to deliver cohesive results. We can also provide
-            design-build services.
-          </p>
-        </article>
-        <article class="faq-item">
-          <h3>Where do you operate?</h3>
-          <p>
-            Troia Construction serves clients across the Northeast and Mid-Atlantic
-            regions, with the ability to mobilize teams nationwide for select
-            projects.
-          </p>
-        </article>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="faq-grid">
+            <article class="faq-item">
+              <h3>Where do you work?</h3>
+              <p>
+                Our headquarters is at 243 Prospect Street in La Jolla, California. From there we
+                serve San Diego&apos;s coastal and inland communities—including La Jolla, Del Mar,
+                Encinitas, Carlsbad, and Downtown.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Do you only build ADUs?</h3>
+              <p>
+                ADUs are a core specialty, but we also deliver custom residences, multifamily
+                improvements, and boutique commercial builds. We frequently partner with clients on
+                targeted trade scopes such as framing, foundations, roofing, and siding.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>How hands-on are the founders?</h3>
+              <p>
+                Robert and Angelos attend weekly site walks, lead subcontractor coordination, and
+                handle key client updates personally. They remain involved from preconstruction
+                through turnover.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Can you help before design is complete?</h3>
+              <p>
+                Yes. Early collaboration allows us to refine budgets, align structural systems,
+                review utility requirements, and flag potential permitting hurdles before they slow
+                the project.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>How are inquiries handled?</h3>
+              <p>
+                Contact form submissions route directly to Robert and Angelos. Replace the
+                Formspree ID on the contact page with your endpoint and each inquiry will arrive in
+                your inbox for immediate response.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Do you work with outside design teams?</h3>
+              <p>
+                Absolutely. We collaborate with architects, interior designers, and engineers
+                throughout California and can recommend partners suited to your project&apos;s scope and
+                aesthetic.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      &copy; <span id="year"></span> Troia Construction. All rights reserved.
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Troia Construction · La Jolla, California
     </footer>
 
     <script>

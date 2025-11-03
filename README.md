@@ -1,6 +1,6 @@
 # Troia Construction Website
 
-Static marketing site for Troia Construction built with HTML and CSS for hosting on GitHub Pages. The site includes dedicated pages for:
+Marketing site for Troia Construction optimized for GitHub Pages. The site includes dedicated pages for:
 
 - Home (`index.html`)
 - Services (`services.html`)
@@ -10,18 +10,19 @@ Static marketing site for Troia Construction built with HTML and CSS for hosting
 
 ## Brand Assets
 
-- Company logo: `assets/images/troia-logo.svg`
-- Team portraits: `assets/images/robert-amarin.svg`, `assets/images/angelos-stavrou.svg`
+- Primary crest: `assets/images/troia-logo.svg`
+- Typography: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) for headlines and [Montserrat](https://fonts.google.com/specimen/Montserrat) for supporting copy (loaded from Google Fonts in each page head)
+- Team imagery references high-quality portrait photography hosted on Unsplash—swap the `src` attributes in `team.html` with your own photos as desired.
 
 ## Local Development
 
-Open any page in a browser directly from the repository root:
+Serve the site locally with any static file server. One option:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` to preview the site.
+Visit `http://localhost:8000` to preview.
 
 ## Contact Form Setup
 
