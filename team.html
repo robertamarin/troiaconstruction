@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team | Troia Construction</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="brand">Troia Construction</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="team.html">Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="section-title">Meet Our Leadership</h1>
+        <p>
+          Our team combines field experience, engineering expertise, and project
+          management excellence. Together, we deliver resilient structures and
+          long-term partnerships.
+        </p>
+      </section>
+
+      <section class="grid grid-three" style="margin-top: 2rem">
+        <article class="card team-member">
+          <img
+            src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=300&q=80"
+            alt="Portrait of Olivia Troia"
+          />
+          <h3>Olivia Troia</h3>
+          <p>Founder &amp; CEO</p>
+          <p>
+            Oversees corporate strategy and client relations, ensuring every
+            project reflects the company's commitment to quality and integrity.
+          </p>
+        </article>
+        <article class="card team-member">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80"
+            alt="Portrait of Marcus Rivera"
+          />
+          <h3>Marcus Rivera</h3>
+          <p>Director of Construction</p>
+          <p>
+            Leads site operations, safety programs, and contractor coordination
+            to keep builds on schedule and under budget.
+          </p>
+        </article>
+        <article class="card team-member">
+          <img
+            src="https://images.unsplash.com/photo-1544723795-43253772e19b?auto=format&fit=crop&w=300&q=80"
+            alt="Portrait of Priya Desai"
+          />
+          <h3>Priya Desai</h3>
+          <p>Head of Design-Build</p>
+          <p>
+            Champions integrated design solutions that balance aesthetics,
+            sustainability, and functionality across all sectors.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Troia Construction. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
