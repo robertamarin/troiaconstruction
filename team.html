@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team | Troia Construction</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="brand">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction logo" />
+          <span>Troia Construction</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="team.html">Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="section-title">Meet the Founders</h1>
+        <p class="section-subtitle">
+          Troia Construction is a San Diego-based partnership led by Robert
+          Amarin and Angelos Stavrou. We are hands-on builders who guide every
+          project from pre-construction strategy to the final handoff.
+        </p>
+      </section>
+
+      <section class="grid grid-two" style="margin-top: 2.5rem">
+        <article class="card team-member">
+          <img src="assets/images/robert-amarin.svg" alt="Illustrated portrait of Robert Amarin" />
+          <h3>Robert Amarin</h3>
+          <span class="title">Managing Partner &amp; Co-Founder</span>
+          <p class="bio">
+            Robert directs client strategy, financial controls, and project
+            delivery. With two decades in ground-up construction, he aligns
+            budgets, schedules, and design intent while keeping communication
+            clear and proactive.
+          </p>
+        </article>
+
+        <article class="card team-member">
+          <img src="assets/images/angelos-stavrou.svg" alt="Illustrated portrait of Angelos Stavrou" />
+          <h3>Angelos Stavrou</h3>
+          <span class="title">Operations Director &amp; Co-Founder</span>
+          <p class="bio">
+            Angelos oversees field execution, trade partner coordination, and
+            quality assurance. His site leadership keeps ADUs, estates, and
+            commercial improvements moving efficiently without sacrificing
+            craftsmanship.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Troia Construction. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
