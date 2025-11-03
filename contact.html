@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Troia Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+          <span>Troia Construction</span>
+        </a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-heading">Let&apos;s build something exceptional</h1>
+        <p class="section-lead">
+          Tell us about your project and one of our founders will respond within one business day
+          to coordinate next steps.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="contact-layout">
+            <article class="contact-panel">
+              <h3>Headquarters</h3>
+              <ul class="contact-details">
+                <li>243 Prospect Street</li>
+                <li>La Jolla, California 92037</li>
+                <li>Serving all of San Diego County</li>
+              </ul>
+
+              <h3>Connect</h3>
+              <ul class="contact-details">
+                <li>Phone: (858) 555-0146</li>
+                <li>Email: build@troiaconstruction.com</li>
+              </ul>
+
+              <h3>Office Hours</h3>
+              <ul class="contact-details">
+                <li>Monday – Friday: 7:00am – 6:00pm</li>
+                <li>Saturday: Strategy sessions by appointment</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </article>
+
+            <article class="contact-panel">
+              <h3>Send a project inquiry</h3>
+              <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"></textarea>
+
+                <button class="btn-primary" type="submit">Submit Inquiry</button>
+              </form>
+              <div class="contact-note">
+                <strong>How inquiries reach you:</strong> Update the Formspree endpoint in the form
+                action with your unique ID. Submissions will route straight to your email, allowing
+                you to reply directly from your inbox and keep conversations centralized.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Troia Construction · La Jolla, California
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

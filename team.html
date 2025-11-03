@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team | Troia Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+          <span>Troia Construction</span>
+        </a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="team.html">Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-heading">Leadership you&apos;ll see on site</h1>
+        <p class="section-lead">
+          Troia Construction is helmed by co-founders Robert Amarin and Angelos Stavrou.
+          Together, they blend executive strategy, on-the-ground coordination, and relentless
+          craftsmanship for every project we deliver.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="profile-grid">
+            <article class="profile-card">
+              <img
+                class="profile-headshot"
+                src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80"
+                alt="Portrait of Robert Amarin"
+              />
+              <h3>Robert Amarin</h3>
+              <div class="title">Managing Partner &amp; Co-Founder</div>
+              <p>
+                Robert spearheads client strategy, financial controls, and design alignment. With
+                more than 20 years across luxury residential and commercial markets, he keeps
+                budgets disciplined and communications proactive.
+              </p>
+            </article>
+
+            <article class="profile-card">
+              <img
+                class="profile-headshot"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+                alt="Portrait of Angelos Stavrou"
+              />
+              <h3>Angelos Stavrou</h3>
+              <div class="title">Operations Director &amp; Co-Founder</div>
+              <p>
+                Angelos leads field execution, trade partner coordination, and quality assurance.
+                His on-site leadership ensures schedules stay on track, safety protocols are
+                enforced, and craftsmanship exceeds expectations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="feature-card">
+            <span class="pill">Our Approach</span>
+            <h3>Hands-on founders. High accountability.</h3>
+            <p>
+              We do not delegate client relationships or project leadership. When you hire Troia
+              Construction, you work directly with the owners—on calls, in meetings, and during
+              site walks. That accountability is how we keep every commitment.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Troia Construction · La Jolla, California
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
