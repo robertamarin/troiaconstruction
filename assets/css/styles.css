@@ -70,8 +70,8 @@ img {
 }
 
 .brand img {
-  width: 176px;
-  height: 176px;
+  width: 220px;
+  height: 220px;
   filter: drop-shadow(0 22px 45px rgba(23, 32, 48, 0.28));
   transition: transform 0.4s ease;
 }
