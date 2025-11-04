@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quote | Troia Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+          <div class="brand-text">
+            <span class="brand-tagline">Founder-Led Coastal Builders</span>
+          </div>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="primary-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-cta"><a class="btn-nav active" href="quote.html">Get a Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-heading">Request a detailed construction quote</h1>
+        <p class="section-lead">
+          Share your drawings, goals, and timeline so we can prepare a scoped proposal. We&apos;ll follow
+          up to confirm details and schedule a walkthrough when needed.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="contact-layout quote-layout">
+            <article class="contact-panel">
+              <span class="pill">Detailed Estimates</span>
+              <h3>What to expect from our founders</h3>
+              <p>
+                Every estimate is built by Robert and Angelos. We benchmark comparable builds, surface
+                permitting considerations, and outline schedule milestones so you know exactly what to
+                expect.
+              </p>
+              <ul class="quote-highlights">
+                <li>
+                  <strong>Site walk &amp; scope alignment</strong>
+                  <span>
+                    We schedule an on-site review to confirm access, utilities, and structural needs so
+                    the estimate reflects real-world conditions.
+                  </span>
+                </li>
+                <li>
+                  <strong>Transparent line items</strong>
+                  <span>
+                    Receive a line-by-line scope that covers self-performed work, specialty trades, and
+                    allowances for finishes.
+                  </span>
+                </li>
+                <li>
+                  <strong>Schedule roadmap</strong>
+                  <span>
+                    Get a milestone schedule that highlights permitting durations, mobilization, and
+                    projected turnover dates.
+                  </span>
+                </li>
+              </ul>
+              <div class="contact-note">
+                Have plans ready? Attach a shared drive link in your message so we can review drawings,
+                surveys, or consultant reports before our call.
+              </div>
+            </article>
+
+            <article class="contact-panel">
+              <h3>Request a proposal</h3>
+              <form class="quote-form" action="https://formspree.io/f/meopbvzn" method="POST">
+                <div class="form-columns">
+                  <div>
+                    <label for="quote-name">Name</label>
+                    <input type="text" id="quote-name" name="name" placeholder="Your name" required />
+                  </div>
+                  <div>
+                    <label for="quote-email">Email</label>
+                    <input type="email" id="quote-email" name="email" placeholder="you@example.com" required />
+                  </div>
+                </div>
+
+                <div class="form-columns">
+                  <div>
+                    <label for="quote-phone">Phone</label>
+                    <input type="tel" id="quote-phone" name="phone" placeholder="(555) 123-4567" />
+                  </div>
+                  <div>
+                    <label for="quote-location">Project location</label>
+                    <input type="text" id="quote-location" name="project_location" placeholder="City or neighborhood" />
+                  </div>
+                </div>
+
+                <label for="quote-type">Project type</label>
+                <select id="quote-type" name="project_type" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="ADU">Accessory Dwelling Unit</option>
+                  <option value="Custom Home">Custom Home</option>
+                  <option value="Remodel">Major Remodel / Addition</option>
+                  <option value="Multifamily">Multifamily / Mixed Use</option>
+                  <option value="Specialty Trade">Specialty Trade Package</option>
+                  <option value="Other">Other</option>
+                </select>
+
+                <div class="form-columns">
+                  <div>
+                    <label for="quote-start">Target start</label>
+                    <select id="quote-start" name="target_start">
+                      <option value="Flexible" selected>Flexible</option>
+                      <option value="0-3 months">0 – 3 months</option>
+                      <option value="3-6 months">3 – 6 months</option>
+                      <option value="6-12 months">6 – 12 months</option>
+                      <option value="12+ months">12+ months</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="quote-budget">Estimated budget</label>
+                    <select id="quote-budget" name="estimated_budget">
+                      <option value="Undisclosed" selected>Undisclosed</option>
+                      <option value="Up to $250k">Up to $250k</option>
+                      <option value="$250k-$500k">$250k – $500k</option>
+                      <option value="$500k-$1M">$500k – $1M</option>
+                      <option value="$1M+">$1M+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label for="quote-message">Project details</label>
+                <textarea
+                  id="quote-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Share square footage, design team, permitting status, and any links to drawings"
+                  required
+                ></textarea>
+
+                <button class="btn-primary" type="submit">Request Quote</button>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="contact-cta">
+            <div class="cta-body">
+              <span class="pill">Need specs fast?</span>
+              <h3>We coordinate quotes after a founder consultation.</h3>
+              <p>
+                Email us both to share drawings or invite us to your project portal. We&apos;ll confirm
+                receipt, outline next steps, and schedule a working session with our leadership.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:robert@troiaconstruction.com" class="contact-link">robert@troiaconstruction.com</a>
+                <a href="mailto:angelo@troiaconstruction.com" class="contact-link">angelo@troiaconstruction.com</a>
+              </div>
+            </div>
+            <div class="cta-actions">
+              <a
+                class="btn-primary"
+                href="mailto:robert@troiaconstruction.com,angelo@troiaconstruction.com"
+                >Email Troia Construction</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <div class="footer-brandmark">
+              <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+              <p class="footer-text">
+                Founder-led coastal builders delivering ADUs, custom homes, and specialty trade
+                packages across Southern California.
+              </p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <span class="footer-heading">Service Area</span>
+            <p class="footer-text">
+              We serve all of San Diego County, including La Jolla and Chula Vista, and up through
+              Orange County.
+            </p>
+          </div>
+          <div class="footer-col">
+            <span class="footer-heading">Contact</span>
+            <ul class="footer-contact-list">
+              <li><a href="mailto:robert@troiaconstruction.com">robert@troiaconstruction.com</a></li>
+              <li><a href="mailto:angelo@troiaconstruction.com">angelo@troiaconstruction.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; <span id="year"></span> Troia Construction</span>
+          <span>Founder-Led · La Jolla, California</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
