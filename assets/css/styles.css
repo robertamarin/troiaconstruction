@@ -424,10 +424,15 @@ main {
   height: 184px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  transform: scale(1.8);
+  transform-origin: center;
   margin: 0 auto 1.5rem;
   border: 6px solid rgba(201, 162, 74, 0.35);
   box-shadow: 0 22px 42px rgba(31, 42, 68, 0.15);
+  overflow: hidden;
 }
+
 
 .profile-card h3 {
   font-size: 1.4rem;
@@ -639,13 +644,4 @@ form textarea:focus {
   .brand-tagline {
     display: none;
   }
-}
-
-.profile-card {
-  overflow: hidden;
-}
-
-.profile-headshot {
-  transform: scale(1.2);
-  transform-origin: center;
 }
