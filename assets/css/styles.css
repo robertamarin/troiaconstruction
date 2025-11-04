@@ -640,3 +640,12 @@ form textarea:focus {
     display: none;
   }
 }
+
+.profile-card {
+  overflow: hidden;
+}
+
+.profile-headshot {
+  transform: scale(1.2);
+  transform-origin: center;
+}
