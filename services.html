@@ -22,7 +22,13 @@
             <span class="brand-tagline">Founder-Led Coastal Builders</span>
           </div>
         </a>
-        <nav class="site-nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="primary-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="services.html">Services</a></li>
@@ -253,6 +259,7 @@
       </div>
     </footer>
 
+    <script src="assets/js/site.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
