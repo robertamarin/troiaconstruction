@@ -12,7 +12,7 @@ Marketing site for Troia Construction optimized for GitHub Pages. The site inclu
 
 - Primary crest: `assets/images/troia-logo.svg`
 - Typography: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) for headlines and [Montserrat](https://fonts.google.com/specimen/Montserrat) for supporting copy (loaded from Google Fonts in each page head)
-- Team imagery references high-quality portrait photography hosted on Unsplash—swap the `src` attributes in `team.html` with your own photos as desired.
+- Team imagery references high-quality portrait photography hosted on Unsplash; swap the `src` attributes in `team.html` with your own photos as desired.
 
 ## Local Development
 

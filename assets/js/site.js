@@ -63,6 +63,67 @@
     }
 
     setExpanded(false);
+
+    const callButtons = document.querySelectorAll('.btn-call-now');
+
+    callButtons.forEach((button) => {
+      const targetSelector = button.getAttribute('data-target');
+
+      if (!targetSelector) {
+        return;
+      }
+
+      const target = document.querySelector(targetSelector);
+
+      if (!target) {
+        return;
+      }
+
+      const phoneLink = target.querySelector('a');
+
+      button.addEventListener('click', () => {
+        const wasHidden = target.hasAttribute('hidden');
+
+        if (wasHidden) {
+          target.removeAttribute('hidden');
+          button.setAttribute('aria-expanded', 'true');
+        }
+
+        if (phoneLink) {
+          if (typeof phoneLink.focus === 'function') {
+            try {
+              phoneLink.focus({ preventScroll: true });
+            } catch (error) {
+              phoneLink.focus();
+            }
+          }
+
+          const clickLink = () => {
+            if (typeof phoneLink.click === 'function') {
+              phoneLink.click();
+              return true;
+            }
+
+            const href = phoneLink.getAttribute('href');
+
+            if (href) {
+              window.location.href = href;
+              return true;
+            }
+
+            return false;
+          };
+
+          if (wasHidden) {
+            requestAnimationFrame(() => {
+              clickLink();
+            });
+          } else {
+            clickLink();
+          }
+        }
+      });
+    });
   };
 
   if (document.readyState === 'loading') {
