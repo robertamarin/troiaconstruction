@@ -63,6 +63,35 @@
     }
 
     setExpanded(false);
+
+    const callButtons = document.querySelectorAll('.btn-call-now');
+
+    callButtons.forEach((button) => {
+      const targetSelector = button.getAttribute('data-target');
+
+      if (!targetSelector) {
+        return;
+      }
+
+      const target = document.querySelector(targetSelector);
+
+      if (!target) {
+        return;
+      }
+
+      button.addEventListener('click', () => {
+        if (target.hasAttribute('hidden')) {
+          target.removeAttribute('hidden');
+          button.setAttribute('aria-expanded', 'true');
+
+          const phoneLink = target.querySelector('a');
+
+          if (phoneLink) {
+            phoneLink.focus();
+          }
+        }
+      });
+    });
   };
 
   if (document.readyState === 'loading') {

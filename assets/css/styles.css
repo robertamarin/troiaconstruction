@@ -310,6 +310,7 @@ img {
   letter-spacing: 0.08em;
   border: 1px solid transparent;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -376,6 +377,14 @@ main {
   max-width: 780px;
   margin: 0 auto;
   text-align: center;
+}
+
+.story-section .story-intro p + p {
+  margin-top: 1.25rem;
+}
+
+.story-section .story-services {
+  margin-top: 3rem;
 }
 
 .story-section p {
@@ -686,6 +695,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.contact-cta .cta-reveal {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .feature-grid,
@@ -1193,13 +1209,13 @@ form select:focus {
   }
 
   .brand img {
-    width: 190px;
-    height: 190px;
+    width: 210px;
+    height: 210px;
   }
 
   .logo-large {
-    width: 230px;
-    height: 230px;
+    width: 270px;
+    height: 270px;
   }
 
   .nav-toggle {
@@ -1235,7 +1251,11 @@ form select:focus {
 
   .adu-actions {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+  }
+
+  .adu-actions .contact-link {
+    text-align: center;
   }
 
   .contact-cta {
@@ -1249,6 +1269,11 @@ form select:focus {
   .contact-cta .contact-links {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .contact-cta .cta-reveal {
+    justify-content: center;
+    text-align: center;
   }
 
   .process-list li {
@@ -1279,13 +1304,13 @@ form select:focus {
 
 @media (max-width: 480px) {
   .brand img {
-    width: 160px;
-    height: 160px;
+    width: 210px;
+    height: 210px;
   }
 
   .logo-large {
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
   }
 
   .brand-tagline {
