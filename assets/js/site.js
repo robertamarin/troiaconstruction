@@ -79,15 +79,47 @@
         return;
       }
 
+      const phoneLink = target.querySelector('a');
+
       button.addEventListener('click', () => {
-        if (target.hasAttribute('hidden')) {
+        const wasHidden = target.hasAttribute('hidden');
+
+        if (wasHidden) {
           target.removeAttribute('hidden');
           button.setAttribute('aria-expanded', 'true');
+        }
 
-          const phoneLink = target.querySelector('a');
+        if (phoneLink) {
+          if (typeof phoneLink.focus === 'function') {
+            try {
+              phoneLink.focus({ preventScroll: true });
+            } catch (error) {
+              phoneLink.focus();
+            }
+          }
 
-          if (phoneLink) {
-            phoneLink.focus();
+          const clickLink = () => {
+            if (typeof phoneLink.click === 'function') {
+              phoneLink.click();
+              return true;
+            }
+
+            const href = phoneLink.getAttribute('href');
+
+            if (href) {
+              window.location.href = href;
+              return true;
+            }
+
+            return false;
+          };
+
+          if (wasHidden) {
+            requestAnimationFrame(() => {
+              clickLink();
+            });
+          } else {
+            clickLink();
           }
         }
       });
