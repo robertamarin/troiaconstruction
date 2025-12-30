@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Log your days and dreams in a fast, private journal. Capture what happened, track patterns, and search entries instantly on any device."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://troiaconstruction.com/journal.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Troia Construction" />
+    <meta property="og:title" content="Journal | Troia Construction" />
+    <meta
+      property="og:description"
+      content="Capture daily notes and dreams in a lightweight journal that stays private to your device."
+    />
+    <meta property="og:url" content="https://troiaconstruction.com/journal.html" />
+    <meta property="og:image" content="https://troiaconstruction.com/assets/images/Framing.JPEG" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1067" />
+    <meta property="og:image:alt" content="Troia Construction coastal project underway" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Journal | Troia Construction" />
+    <meta
+      name="twitter:description"
+      content="Log your day or morning dreams quickly with instant search on any device."
+    />
+    <meta name="twitter:image" content="https://troiaconstruction.com/assets/images/Framing.JPEG" />
+    <meta name="twitter:image:alt" content="Troia Construction coastal project underway" />
+    <title>Journal | Troia Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+          <div class="brand-text">
+            <span class="brand-tagline">Founder-Led Coastal Builders</span>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a class="active" aria-current="page" href="journal.html">Journal</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-cta"><a class="btn-nav" href="quote.html">Get a Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-heading">Journal your days and dreams</h1>
+        <p class="section-lead">
+          Capture what happened, jot down morning dreams, and search your notes instantly. Entries
+          save privately to your device so logging stays fast and secure on web or phone.
+        </p>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          <div class="journal-grid">
+            <article class="contact-panel journal-panel">
+              <span class="pill">New entry</span>
+              <h3>Log how your day or morning went</h3>
+              <form id="journal-form" novalidate>
+                <div class="journal-row">
+                  <div class="field">
+                    <label for="entry-type">Entry type</label>
+                    <select id="entry-type" name="type" required>
+                      <option value="day" selected>Day log</option>
+                      <option value="dream">Dream log</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="entry-date">Date</label>
+                    <input type="date" id="entry-date" name="date" required />
+                  </div>
+                </div>
+
+                <label for="entry-title">Title</label>
+                <input
+                  type="text"
+                  id="entry-title"
+                  name="title"
+                  placeholder="Site walk, client call, or dream headline"
+                  maxlength="120"
+                  required
+                />
+
+                <label for="entry-notes">Notes</label>
+                <textarea
+                  id="entry-notes"
+                  name="notes"
+                  rows="5"
+                  placeholder="Key moments, lessons, or dream details"
+                  required
+                ></textarea>
+
+                <div class="journal-row">
+                  <div class="field">
+                    <label for="entry-mood">Energy (optional)</label>
+                    <select id="entry-mood" name="mood">
+                      <option value="">Select</option>
+                      <option value="energized">Energized</option>
+                      <option value="steady">Steady</option>
+                      <option value="tired">Tired</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="entry-tags">Tags (optional)</label>
+                    <input
+                      type="text"
+                      id="entry-tags"
+                      name="tags"
+                      placeholder="Permits, framing, clarity, etc."
+                      maxlength="160"
+                    />
+                  </div>
+                </div>
+
+                <button class="btn-primary" type="submit">Save entry</button>
+                <p class="helper-text">Entries stay in your browser for quick access and privacy.</p>
+                <p class="helper-text success" id="journal-success" role="status" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="contact-panel journal-panel">
+              <div class="search-controls">
+                <div class="field">
+                  <label for="journal-search">Search</label>
+                  <input
+                    type="search"
+                    id="journal-search"
+                    name="search"
+                    placeholder="Search titles and notes"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="field">
+                  <label for="entry-filter">Filter</label>
+                  <select id="entry-filter" name="filter">
+                    <option value="all" selected>All entries</option>
+                    <option value="day">Day logs</option>
+                    <option value="dream">Dream logs</option>
+                  </select>
+                </div>
+              </div>
+              <p class="journal-summary">
+                <strong><span id="entry-count">0</span></strong> entries saved on this device.
+              </p>
+              <div class="journal-entries" id="journal-entries" aria-live="polite"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <div class="footer-brandmark">
+              <img src="assets/images/troia-logo.svg" alt="Troia Construction crest logo" />
+              <p class="footer-text">
+                Founder-led coastal builders delivering ADUs, custom homes, and specialty trade
+                packages across Southern California.
+              </p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <span class="footer-heading">Service Area</span>
+            <p class="footer-text">
+              We serve all of San Diego County, including La Jolla and Chula Vista, and up through
+              Orange County.
+            </p>
+          </div>
+          <div class="footer-col">
+            <span class="footer-heading">Contact</span>
+            <ul class="footer-contact-list">
+              <li><a href="mailto:robert@troiaconstruction.com">robert@troiaconstruction.com</a></li>
+              <li><a href="mailto:angelo@troiaconstruction.com">angelo@troiaconstruction.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; <span id="year"></span> Troia Construction</span>
+          <span>Founder-Led · La Jolla, California</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/journal.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
