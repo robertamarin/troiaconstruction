@@ -1623,8 +1623,8 @@ form select:focus {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* ─── Responsive: 1280px — hide tagline before it overlaps nav ─── */
-@media (max-width: 1280px) {
+/* ─── Responsive: 1200px — hide tagline at same point hamburger appears ─── */
+@media (max-width: 1200px) {
   .brand-tagline {
     display: none;
   }
