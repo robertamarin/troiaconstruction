@@ -210,7 +210,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.45rem 0;
+  padding: 0.45rem 2.5rem;
   gap: 1.2rem;
 }
 
@@ -1623,6 +1623,13 @@ form select:focus {
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* ─── Responsive: 1280px — hide tagline before it overlaps nav ─── */
+@media (max-width: 1280px) {
+  .brand-tagline {
+    display: none;
+  }
+}
+
 /* ─── Responsive: 900px ─── */
 @media (max-width: 900px) {
   .brand img {
@@ -1674,8 +1681,8 @@ form select:focus {
   }
 }
 
-/* ─── Responsive: 1080px ─── */
-@media (max-width: 1080px) {
+/* ─── Responsive: 1200px ─── */
+@media (max-width: 1200px) {
   .site-header .inner {
     gap: 0.75rem;
   }
