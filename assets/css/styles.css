@@ -1751,13 +1751,9 @@ form select:focus {
     margin: 0 auto;
   }
 
-  .brand img {
-    width: 160px;
-    height: auto;
-  }
-
+  .brand img,
   .logo-large {
-    width: 190px;
+    width: 220px;
     height: auto;
   }
 
@@ -1894,13 +1890,9 @@ form select:focus {
 
 /* ─── Responsive: 480px ─── */
 @media (max-width: 480px) {
-  .brand img {
-    width: 140px;
-    height: auto;
-  }
-
+  .brand img,
   .logo-large {
-    width: 160px;
+    width: 185px;
     height: auto;
   }
 
