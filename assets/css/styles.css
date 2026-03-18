@@ -1611,6 +1611,30 @@ form select:focus {
   margin-top: 0.25rem;
 }
 
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--brand-gold);
+  color: #fff;
+}
+
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
