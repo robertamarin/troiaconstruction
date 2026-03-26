@@ -19,6 +19,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://troiaconstruction.com/articles.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://troiaconstruction.com/articles/2026-adu-permit-rules-california.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://troiaconstruction.com/articles/san-diego-county-adu-separate-sale.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://troiaconstruction.com/articles/san-diego-housing-permits-double-2025.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://troiaconstruction.com/articles/california-housing-affordability-2026.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://troiaconstruction.com/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
