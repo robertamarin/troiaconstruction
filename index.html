@@ -47,6 +47,16 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preload" href="assets/images/Framing.JPEG" as="image" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+
+    <!-- GA4: Uncomment and replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -82,7 +92,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="articles.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             <li class="nav-cta"><a class="btn-nav" href="quote.html">Get a Quote</a></li>
           </ul>
         </nav>
@@ -250,7 +260,7 @@
                 <li>AB 1033 compliant builds &mdash; sell your ADU separately as a condominium</li>
               </ul>
               <div class="adu-actions">
-                <a class="btn-primary" href="services.html#adu-services">See ADU Services</a>
+                <a class="btn-primary" href="adu.html">Learn About ADU Construction</a>
                 <a class="contact-link" href="contact.html">Talk to us about your project</a>
               </div>
             </div>
@@ -471,7 +481,7 @@
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="quote.html">Get a Quote</a></li>
               <li><a href="articles.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -641,16 +651,63 @@
       }
     </script>
     <!--
-      GOOGLE BUSINESS PROFILE SETUP (Important for local SEO):
-      1. Go to https://business.google.com/ and sign in with a Google account
-      2. Click "Add your business" and enter "Troia Construction"
-      3. Use address: 243 Prospect Street, La Jolla, CA 92037
-      4. Category: "General Contractor" (primary), "ADU Builder" (secondary)
-      5. Phone: +1 571-723-7461 | Website: troiaconstruction.com
-      6. Add business hours, photos, and services
-      7. Google will mail a postcard to verify the address (takes 5-14 days)
-      8. Once verified, start collecting Google Reviews from past clients
-      This is critical for appearing in Google Maps and the local 3-pack results.
+      ═══════════════════════════════════════════════════════════
+      SEO SETUP CHECKLIST — Complete these to start getting calls
+      ═══════════════════════════════════════════════════════════
+
+      1. GOOGLE ANALYTICS 4
+         - analytics.google.com → create a GA4 property for troiaconstruction.com
+         - Copy Measurement ID (format: G-XXXXXXXXXX)
+         - Uncomment the GA4 block in <head> (search "GA4:" in this file)
+
+      2. GOOGLE SEARCH CONSOLE
+         - search.google.com/search-console → Add property: troiaconstruction.com
+         - Verify via meta tag: paste the <meta name="google-site-verification"> tag
+           into the <head> of this file, then click Verify
+         - After verifying: Sitemaps → submit https://troiaconstruction.com/sitemap.xml
+
+      3. GOOGLE BUSINESS PROFILE (most important for local calls — do today)
+         - business.google.com → "Add your business" → "Troia Construction"
+         - Address: 243 Prospect Street, La Jolla, CA 92037
+         - Category: "General Contractor" (primary), "ADU Contractor" (secondary)
+         - Phone: +1 571-723-7461 | Website: troiaconstruction.com
+         - Google mails a postcard to verify (5-14 days) — request it now
+         - Add 10+ project photos of completed work once verified
+         - Text or email past clients with a direct Google review link once live
+
+      4. DIRECTORY LISTINGS (get links + rank faster while your domain builds trust)
+         - Yelp: yelp.com/biz/add — "Troia Construction", category: General Contractor
+         - HomeAdvisor: pro.homeadvisor.com
+         - Houzz: houzz.com/pro/signup
+         - Angi: pro.angi.com
+         - BBB: bbb.org/get-accredited
+         - Nextdoor: nextdoor.com/business (great for neighborhood-level visibility)
+
+      5. STAR RATINGS IN GOOGLE SEARCH RESULTS
+         - Once you have 5+ verified Google reviews, uncomment the block below
+         - Update ratingValue, ratingCount, and reviewCount with real numbers
+         - This adds gold stars next to your listing in search results (big CTR boost)
+    -->
+
+    <!--
+      ACTIVATE WHEN YOU HAVE REAL GOOGLE REVIEWS — update the numbers first:
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://troiaconstruction.com/#localbusiness",
+        "name": "Troia Construction",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "12",
+          "reviewCount": "12"
+        }
+      }
+    </script>
     -->
   </body>
 </html>
