@@ -20,9 +20,15 @@
   </url>
   <url>
     <loc>https://troiaconstruction.com/articles.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://troiaconstruction.com/articles/california-adu-utility-hookup-bill-sb1196.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://troiaconstruction.com/articles/2026-adu-permit-rules-california.html</loc>
